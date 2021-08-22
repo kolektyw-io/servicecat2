@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
   <title>Beego</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -82,12 +82,20 @@
   </header>
   <footer>
     <div class="author">
+      Sesja: {{.sesja}} </br>
       Official website:
       <a href="http://{{.Website}}">{{.Website}}</a> /
       Contact me:
       <a class="email" href="mailto:{{.Email}}">{{.Email}}</a>
+      <br /> {{._xsrf}}
     </div>
   </footer>
+  <form method="post" >
+    {{.xsrfdata}}
+    <button type="submit">
+    sadsdaj
+    </button>
+  </form>
   <div class="backdrop"></div>
 
   <script src="/static/js/reload.min.js"></script>
