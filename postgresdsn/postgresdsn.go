@@ -1,4 +1,4 @@
-package main
+package postgresdsn
 
 type DSN struct {
 	Host     string
@@ -26,3 +26,5 @@ func CreateDSN(host string, user string, password string, dbname string, port st
 func (d *DSN) ReturnDSNAsString() string {
 	return "host=" + d.Host + " user=" + d.user + " password=" + d.password + " dbname=" + d.dbname + " port=" + d.port + " sslmode=" + d.sslmode + " timezone=" + d.timezone
 }
+
+

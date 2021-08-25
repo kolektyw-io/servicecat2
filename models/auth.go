@@ -9,6 +9,7 @@ type User struct {
 	IsSuperUser bool
 	IsStaff     bool
 	Sessions    []Session
+	IsActive	bool
 }
 
 type Group struct {

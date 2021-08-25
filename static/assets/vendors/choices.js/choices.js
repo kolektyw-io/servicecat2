@@ -2549,7 +2549,6 @@ function () {
     }
 
     this.element.removeAttribute('data-choice'); // Re-assign values - this is weird, I know
-    // @todo Figure out why we need to do this
 
     this.element.value = this.element.value; // eslint-disable-line no-self-assign
   };
@@ -2909,7 +2908,6 @@ var TEMPLATES =
       }
 
       div.dataset.deletable = '';
-      /** @todo This MUST be localizable, not hardcoded! */
 
       var REMOVE_ITEM_TEXT = 'Remove item';
       var removeButton = Object.assign(document.createElement('button'), {
