@@ -13,6 +13,5 @@ func Login(username string, password string) bool {
 		return false
 	}
 	err := bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(password))
-
 	return err == nil
 }
